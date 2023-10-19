@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+     
+  
+</head>
+<body  style="background:linear-gradient(to right, rgb(29, 29, 238), orange) ;">
+    <div class="  container" style="background-color: antiquewhite;margin-top: 2rem;margin-bottom: 0rem;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 2rem;">
+            <h1>Formulario</h1>
+        </nav>
+        <div class="row">
+            <div class="col-sm-12 col-md-7">
+                <h3>Formulario de layout</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="numero">Números De 10 caracteres:</label>
+                        <input type="text" class="form-control" id="numero" name="numero" maxlength="10">
+                    </div>
+                    <div class="form-group">
+                        <label for="texto1">Texto De 40 caracteres:</label>
+                        <input type="text" class="form-control" id="texto1" name="texto1" maxlength="40">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="texto2">Texto 2 De 40 caracteres:</label>
+                        <input type="text" class="form-control" id="texto2" name="texto2" maxlength="40">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="texto_multilinea">Texto Multi-línea De 200 caracteres:</label>
+                        <textarea class="form-control" id="texto_multilinea" name="texto_multilinea" rows="3"
+                            maxlength="200"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hora">Hora:</label>
+                        <input type="time" class="form-control" id="hora" name="hora">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-5">
+                <div class="form-check">
+                    <label>Marque la casilla si es correcto:</label><br>
+                    <input type="checkbox" class="form-check-input" id="casilla" name="casilla">
+                    <label class="form-check-label" for="casilla">Casilla</label>
+                </div>
+
+                <div class="form-check">
+                    <label>Opción (seleccione una):</label><br>
+                    <input type="radio" class="form-check-input" id="opcion1" name="opcion" value="opcion1">
+                    <label class="form-check-label" for="opcion1">Opción 1</label><br>
+                    <input type="radio" class="form-check-input" id="opcion2" name="opcion" value="opcion2">
+                    <label class="form-check-label" for="opcion2">Opción 2</label><br>
+                    <input type="radio" class="form-check-input" id="opcion3" name="opcion" value="opcion3">
+                    <label class="form-check-label" for="opcion3">Opción 3</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">Colores Disponibles:</label>
+                    <input type="color" class="form-control" id="color" name="color">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="opciones">Opciones Posibles:</label>
+                    <select class="form-control" id="opciones" name="opciones">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="opciones_multiples">Opciones Múltiples De colores:</label>
+                    <select multiple class="form-control" id="opciones_multiples" name="opciones_multiples">
+                        <option value="opcion1">ROJO</option>
+                        <option value="opcion2">VERDE</option>
+                        <option value="opcion3">AZUL</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="autocomplete">Búsqueda de Nombres con Autocompletar:</label>
+                    <input type="text" class="form-control" id="autocomplete" name="autocomplete" list="sugerencias">
+                    <datalist id="sugerencias">
+                        <option value="daniel">
+                        <option value="fermamdo">
+                        <option value="rogelio">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+
+
+    
+</body>
+</html>
